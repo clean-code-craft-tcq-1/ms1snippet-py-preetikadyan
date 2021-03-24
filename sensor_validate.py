@@ -8,6 +8,8 @@ def check_if_length_is_not_none_and_validate_reading(values,limit):
     length = len(values)
     if length != 0:
        validate_reading(values,length - 1,limit)
+    else:
+       print("Length of the parameter is None!!! Cannot validate reading!!!")
   
 def validate_reading(values, last_but_one_reading,limit):
       for i in range(last_but_one_reading):
