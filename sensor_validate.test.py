@@ -19,7 +19,7 @@ class SensorValidatorTest(unittest.TestCase):
     )
     
   def test_empty_input(self):
-      sensor_validate.if_length_is_not_none_then_validate_readingg([],current_limit,'CURRENT')
+      sensor_validate.if_length_is_not_none_then_validate_reading([],current_limit,'CURRENT')
       sensor_validate.if_length_is_not_none_then_validate_reading([],soc_limit,'SOC')
 
 if __name__ == "__main__":
