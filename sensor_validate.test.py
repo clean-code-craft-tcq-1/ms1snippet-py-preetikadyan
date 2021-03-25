@@ -6,8 +6,8 @@ soc_limit = 0.05
 current_limit = 0.1
 
 # Specifying the battery parameter
-parameter_soc = 'soc'
-parameter_current = 'current'
+parameter_soc = 'SOC'
+parameter_current = 'CURRENT'
 
 class SensorValidatorTest(unittest.TestCase):
   def test_reports_error_when_soc_jumps(self):
