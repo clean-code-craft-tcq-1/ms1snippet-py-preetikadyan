@@ -1,11 +1,11 @@
 import unittest
 import sensor_validate
 
-class SensorValidatorTest(unittest.TestCase):
-  
-  # Limit specification of battery Parameters
+# Limit specification of battery Parameters
   soc_limit = 0.05
   current_limit = 0.1
+
+class SensorValidatorTest(unittest.TestCase):
   
   def test_reports_error_when_soc_jumps(self):
     
