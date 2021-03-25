@@ -12,7 +12,6 @@ class SensorValidatorTest(unittest.TestCase):
     self.assertFalse(
       sensor_validate.if_length_is_not_none_then_validate_reading([0.0, 0.01, 0.5, 0.51],soc_limit,'SOC')
   
-  
   def test_reports_error_when_current_jumps(self):
     
     self.assertFalse(
