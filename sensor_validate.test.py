@@ -19,8 +19,8 @@ class SensorValidatorTest(unittest.TestCase):
     )
     
   def test_empty_input(self):
-      check_if_length_is_not_none_and_validate_reading([],current_limit)
-      check_if_length_is_not_none_and_validate_reading([],soc_limit)
+      sensor_validate.check_if_length_is_not_none_and_validate_reading([],current_limit)
+      sensor_validate.check_if_length_is_not_none_and_validate_reading([],soc_limit)
 
 if __name__ == "__main__":
   unittest.main()
