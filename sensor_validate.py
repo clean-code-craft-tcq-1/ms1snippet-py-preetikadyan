@@ -1,5 +1,5 @@
 
-def  if_given_parameter_produces_noise(value, nextValue, maxDelta):
+def if_given_parameter_produces_noise(value, nextValue, maxDelta):
   if nextValue - value > maxDelta:
     return False
   return True
