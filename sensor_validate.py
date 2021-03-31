@@ -1,5 +1,5 @@
 
-def if_given_parameter_produces_noise(value, nextValue, maxDelta):
+def if_given_parameter_is_ok(value, nextValue, maxDelta):
   if nextValue - value > maxDelta:
     return False
   return True
@@ -14,7 +14,7 @@ def if_length_is_not_none_then_validate_reading(values,limit,parameter_name):
   
 def validate_reading(values, last_but_one_reading,limit):
       for i in range(last_but_one_reading):
-          if(not if_given_parameter_produces_noise(values[i], values[i + 1], limit)):
+          if(not if_given_parameter_is_ok(values[i], values[i + 1], limit)):
               return False
       return True
 
